@@ -1,5 +1,5 @@
 let btn = document.querySelector(".btn");
-
+// Grab
 btn.addEventListener("click", () => {
   let inputval = document.querySelector("input").value;
 
