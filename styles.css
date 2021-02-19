@@ -1,36 +1,130 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 main {
   width: 100%;
-  min-height: 600px;
+  min-height: 100vh;
   display: flex;
+  background-color: #e63946;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
 }
 img {
-  width: 300px;
-  border-radius: 1000px;
+  width: 100px;
+  max-width: 100%;
+  border-radius: 500px;
 }
-.row {
+.title {
+  color: white;
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.lead {
+  padding: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.forminput {
   width: 100%;
-  min-height: 200px;
   display: flex;
+  min-height: 100px;
   align-items: center;
   justify-content: center;
   flex-direction: row;
 }
 
-.box {
-  flex-basis: 700px;
-  background-color: #fafafa;
-  min-height: 300px;
+input {
+  margin: 0 7px;
+}
+
+.profilecard {
+  width: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 30px;
+  flex-direction: column;
+}
+
+i {
+  color: #212529;
+}
+.form-group {
+  gap: 30px;
+  width: 100%;
+  min-height: 70px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  margin: 20px 0;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row !important;
+}
+
+.form-group .text {
+  width: auto;
   display: flex;
+  flex-wrap: wrap;
+
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.text h1 {
+  font-size: 1.2rem;
+}
+.profile-img {
+  width: 100%;
+  flex-wrap: wrap;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 30px;
+  gap: 30px;
+
+  flex-direction: row;
+}
+
+.profile-img .display-4 {
+  font-size: 1.2rem;
+  text-align: center;
+  flex-wrap: wrap;
+  color: #fff;
+
+  font-weight: bold;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  flex-direction: column;
+  flex-basis: 100%;
+  min-height: 100px;
+}
+.user-info {
+  color: #fff;
+  font-weight: 500;
+}
+.followers,
+.following,
+.total {
+  color: #e63946;
+  font-weight: bold;
 }
